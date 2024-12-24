@@ -1,0 +1,94 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(120deg, #f6d365, #fda085);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+}
+
+.t-input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #fda085;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.t-input:focus {
+    border-color: #f6d365;
+    outline: none;
+    box-shadow: 0 0 8px rgba(246, 211, 101, 0.8);
+}
+
+.t-btn {
+    background: #fda085;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.t-btn:hover {
+    background: #f6d365;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.t-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.t-list li {
+    background: #f6d365;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.t-list li:hover {
+    background: #fda085;
+    transform: translateY(-3px);
+}
+
+.t-list li.completed {
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+.clear-btn {
+    background: #ff6f61;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.clear-btn:hover {
+    background: #ff8f72;
+    transform: scale(1.05);
+}
